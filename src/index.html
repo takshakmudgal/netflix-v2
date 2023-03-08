@@ -63,7 +63,7 @@
         class="relative flex flex-col items-center justify-center px-4 py-6"
       >
         <h1
-          class="text-3xl sm:text-5xl font-bold text-center text-white mt-36 mb-8"
+          class="text-3xl sm:text-7xl font-bold text-center text-white mt-36 mb-8"
         >
           Unlimited movies, TV <br />shows, and more.
         </h1>
@@ -73,20 +73,71 @@
         <h2 class="text-base sm:text-lg text-center text-white mb-4">
           Ready to watch? Enter your email to create or restart your membership.
         </h2>
-        <form class="flex flex-col md:flex-row">
+        <form
+          class="w-full flex flex-col md:flex-row items-center md:justify-center md:max-w-4xl"
+        >
           <input
             type="email"
-            class="px-6 py-5 md:px-48 md:py-5 border-2 border-gray-400 focus:outline-none focus:border-blue-400 mb-4 md:mb-0"
-            placeholder=""
+            id="email-input"
+            class="border-2 border-gray-400 py-2 md:py-5 focus:outline-none focus:border-blue-400 mb-4 md:mb-0 w-full"
+            placeholder="Email Address"
             required
           />
           <button
-            class="bg-red-700 text-white text-xl md:text-2xl px-6 md:px-8 py-2 md:py-2.5"
+            class="bg-red-700 text-white text-xl md:text-2xl px-6 md:px-8 py-5 w-full max-w-[250px]"
           >
             Get Started >
           </button>
         </form>
       </main>
+    </div>
+    <!--Section 1-->
+    <div
+      class="bg-black flex flex-col md:flex-row relative items-center justify-center border-b-8 border-zinc-700 pb-10"
+    >
+      <div class="flex-col text-white pr-20 pl-20 pt-10">
+        <h1
+          class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left"
+        >
+          Enjoy on your TV.
+        </h1>
+        <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
+          Watch on smart TVs, PlayStation, Xbox, <br />
+          Chromecast, Apple TV, Blu-ray players and more.
+        </h2>
+      </div>
+      <div class="relative pr-10 pl-10">
+        <img src="/public/tv.png" alt="TV Frame" srcset="" />
+      </div>
+    </div>
+    <!--Section 2-->
+    <div
+      class="bg-black flex flex-col-reverse md:flex-row relative items-center text-white justify-center border-b-8 border-zinc-700 pb-10"
+    >
+      <div class="relative pr-10 pl-10">
+        <img src="/public/mobile.jpg" alt="TV Frame" srcset="" />
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-28"
+        >
+          <div
+            class="flex items-center bg-black border-2 border-white border-opacity-25 rounded-lg shadow-lg py-2 pl-2 pr-6 md:pr-72 min-w-[22rem]"
+          >
+            <div class="">
+              <img alt="" src="/public/boxshot.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col text-white pr-20 pl-20 pt-10">
+        <h1
+          class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left"
+        >
+          Download your shows <br />to watch offline.
+        </h1>
+        <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
+          Save your favourites easily and always have <br />something to watch.
+        </h2>
+      </div>
     </div>
 
     <!-- Footer section -->
@@ -95,5 +146,6 @@
       <a href="#" class="text-gray-500 mr-6">Privacy Policy</a>
       <a href="#" class="text-gray-500">Help Center</a>
     </footer>
+    <script src="/src/app.js"></script>
   </body>
 </html>

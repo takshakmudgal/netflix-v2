@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.pb-98 {
-  padding-bottom: 26rem;
+#email-input:focus::placeholder {
+  transform: translateY(-145%);
+  font-size: 0.75rem;
+  transition: all 0.1s ease-in-out;
+  font-weight: 600;
+}
+#email-input::placeholder {
+  padding-left: 1%;
+  color: #8c8c8c;
 }
