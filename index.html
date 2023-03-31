@@ -1,131 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/input.css" />
-    <link rel="stylesheet" href="/output.css" />
-    <script src="/app.js"></script>
-    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
-  </head>
-  <body>
-    <!-- Header section -->
-    <div
-      class="relative bg-fixed bg-cover pb-36 border-b-8 border-zinc-700"
-      style="background-image: url('/public/background.jpg')"
-    >
-      <div
-        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-neutral-900"
-        style="mix-blend-mode: multiply"
-      ></div>
-      <div
-        class="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-neutral-900"
-        style="mix-blend-mode: multiply"
-      ></div>
-      <div
-        class="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-neutral-900"
-        style="mix-blend-mode: multiply"
-      ></div>
-      <div
-        class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-neutral-900"
-        style="mix-blend-mode: multiply"
-      ></div>
-      <header
-        class="relative flex justify-between items-center px-8 md:px-14 py-6"
-      >
-        <div>
-          <img
-            src="/public/logo.png"
-            alt="Netflix Logo"
-            class="w-16 sm:w-24 md:w-36 lg:w-44"
-          />
-        </div>
-        <div class="flex items-center">
-          <select
-            name="language"
-            class="bg-transparent text-white border-2 mr-2 sm:mr-8 text-sm sm:text-base"
-          >
-            <option value="english" class="text-white bg-gray-400">
-              English
-            </option>
-            <option value="hindi" class="text-white bg-gray-400">Hindi</option>
-          </select>
-          <button
-            class="bg-red-700 text-white px-2 py-1 rounded-sm sm:px-4 sm:py-2 sm:rounded-md text-sm sm:text-base"
-          >
-            Sign Up
-          </button>
-        </div>
-      </header>
 
-      <main
-        class="relative flex flex-col items-center justify-center px-4 py-6"
-      >
-        <h1
-          class="text-3xl sm:text-7xl font-bold text-center text-white mt-36 mb-8"
-        >
-          Unlimited movies, TV <br />shows, and more.
-        </h1>
-        <h2 class="text-xl sm:text-2xl text-center text-white mb-8">
-          Watch anywhere. Cancel anytime.
-        </h2>
-        <h2 class="text-base sm:text-lg text-center text-white mb-4">
-          Ready to watch? Enter your email to create or restart your membership.
-        </h2>
-        <form
-          class="w-full flex flex-col md:flex-row items-center md:justify-center md:max-w-4xl"
-        >
-          <input
-            type="email"
-            id="email-input"
-            class="border-2 border-gray-400 py-2 md:py-5 focus:outline-none focus:border-blue-400 mb-4 md:mb-0 w-full"
-            placeholder="Email Address"
-            required
-          />
-          <button
-            class="bg-red-700 text-white text-xl md:text-2xl px-6 md:px-8 py-5 w-full max-w-[250px]"
-          >
-            Get Started >
-          </button>
-        </form>
-      </main>
-    </div>
-    <!--Section 1-->
-    <div
-      class="bg-black flex flex-col md:flex-row relative items-center justify-center border-b-8 border-zinc-700 pb-10"
-    >
-      <div class="flex-col text-white pr-20 pl-20 pt-10">
-        <h1
-          class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left"
-        >
-          Enjoy on your TV.
-        </h1>
-        <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
-          Watch on smart TVs, PlayStation, Xbox, <br />
-          Chromecast, Apple TV, Blu-ray players and more.
-        </h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+          }
+        }
+      }
+    }
+  </script>
+  <script src="/app.js"></script>
+  <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <div class="relative bg-fixed bg-cover pb-36 border-b-8 border-zinc-700"
+    style="background-image: url('/public/background.jpg')">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-neutral-900"
+      style="mix-blend-mode: multiply"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-neutral-900"
+      style="mix-blend-mode: multiply"></div>
+    <div class="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-neutral-900"
+      style="mix-blend-mode: multiply"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-neutral-900"
+      style="mix-blend-mode: multiply"></div>
+    <header class="relative flex justify-between items-center px-8 md:px-14 py-6">
+      <div>
+        <img src="/public/logo.png" alt="Netflix Logo" class="w-16 sm:w-24 md:w-36 lg:w-44" />
       </div>
-      <div class="relative pr-10 pl-10">
-        <img src="/public/tv.png" alt="TV Frame" class="z-20" />
-        <!-- <div class="absolute inset-0 z-10">
-          <video
-            src="/public/Video1.mp4"
-            class="w-2/3 translate-x-24 object-contain"
-            autoplay
-            loop
-            muted
-          ></video>
-        </div> -->
+      <div class="flex items-center">
+        <select name="language" class="bg-transparent text-white border-2 mr-2 sm:mr-8 text-sm sm:text-base">
+          <option value="english" class="text-white bg-gray-400">
+            English
+          </option>
+          <option value="hindi" class="text-white bg-gray-400">Hindi</option>
+        </select>
+        <button class="bg-red-700 text-white px-2 py-1 rounded-sm sm:px-4 sm:py-2 sm:rounded-md text-sm sm:text-base">
+          Sign Up
+        </button>
       </div>
+    </header>
+
+    <main class="relative flex flex-col items-center justify-center px-4 py-6">
+      <h1 class="text-3xl sm:text-7xl font-bold text-center text-white mt-36 mb-8">
+        Unlimited movies, TV <br />shows, and more.
+      </h1>
+      <h2 class="text-xl sm:text-2xl text-center text-white mb-8">
+        Watch anywhere. Cancel anytime.
+      </h2>
+      <h2 class="text-base sm:text-lg text-center text-white mb-4">
+        Ready to watch? Enter your email to create or restart your membership.
+      </h2>
+      <form class="w-full flex flex-col md:flex-row items-center md:justify-center md:max-w-4xl">
+        <input type="email" id="email-input"
+          class="border-2 border-gray-400 py-2 md:py-5 focus:outline-none focus:border-blue-400 mb-4 md:mb-0 w-full"
+          placeholder="Email Address" required />
+        <button class="bg-red-700 text-white text-xl md:text-2xl px-6 md:px-8 py-5 w-full max-w-[250px]">
+          Get Started >
+        </button>
+      </form>
+    </main>
+  </div>
+  <!--Section 1-->
+  <div class="bg-black flex flex-col md:flex-row items-center justify-center border-b-8 border-zinc-700 pb-10">
+    <div class="flex-col text-white pr-20 pl-20 pt-10">
+      <h1 class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left">
+        Enjoy on your TV.
+      </h1>
+      <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
+        Watch on smart TVs, PlayStation, Xbox, <br />
+        Chromecast, Apple TV, Blu-ray players and more.
+      </h2>
     </div>
-    <!-- Section 2 -->
-    <div
-      class="bg-black flex flex-col-reverse md:flex-row relative items-center text-white justify-center border-b-8 border-zinc-700 pb-10"
-    >
-      <div class="relative pr-10 pl-10">
-        <img src="/public/mobile.jpg" alt="TV Frame" srcset="" />
-        <!-- <div
+    <div class="relative flex justify-center">
+      <img src="/public/tv.png" alt="TV Frame" class="relative w-[95%] max-w-[600px] h-full overflow-clip z-[6]"
+        style="overflow-clip-margin: content-box;" />
+
+
+      <video src=" /public/Video1.mp4"
+        class="absolute top-[20.5%] left-[12.5%] max-w-[73%] object-contain overflow-clip z-[2]" autoplay loop muted
+        style="overflow-clip-margin: content-box;"></video>
+
+    </div>
+  </div>
+  <!-- Section 2 -->
+  <div
+    class="bg-black flex flex-col-reverse md:flex-row relative items-center text-white justify-center border-b-8 border-zinc-700 pb-10">
+    <div class="relative pr-10 pl-10">
+      <img src="/public/mobile.jpg" alt="TV Frame" srcset="" />
+      <!-- <div
           class="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-28"
         >
           <div
@@ -141,263 +112,181 @@
             </div>
           </div>
         </div> -->
+    </div>
+    <div class="flex-col text-white pr-20 pl-20 pt-10">
+      <h1 class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left">
+        Download your shows <br />to watch offline.
+      </h1>
+      <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
+        Save your favourites easily and always have <br />something to watch.
+      </h2>
+    </div>
+  </div>
+  <!--Section 3-->
+  <div class="bg-black flex flex-col md:flex-row relative items-center justify-center border-b-8 border-zinc-700 pb-10">
+    <div class="flex-col text-white pr-20 pl-20 pt-10">
+      <h1 class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left">
+        Watch everywhere.
+      </h1>
+      <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
+        Stream unlimited movies and TV shows on your phone, <br />tablet,
+        laptop, and TV.
+      </h2>
+    </div>
+    <div class="relative pr-10 pl-10">
+      <img src="/public/device-pile-in.png" alt="devices-pile-up" class="z-20" />
+    </div>
+  </div>
+  <!-- Section 4 -->
+  <div
+    class="bg-black flex flex-col-reverse md:flex-row relative items-center text-white justify-center border-b-8 border-zinc-700 pb-10">
+    <div class="relative pr-10 pl-10">
+      <img src="/public/child-profile.png" alt="TV Frame" srcset="" />
+    </div>
+    <div class="flex-col text-white pr-20 pl-20 pt-10">
+      <h1 class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left">
+        Create profiles for <br />
+        children.
+      </h1>
+      <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
+        Send children on adventures with their favourite <br />characters in a
+        space made just for them—free with<br />
+        your membership.
+      </h2>
+    </div>
+  </div>
+
+  <!--Questions-->
+  <div class="faq bg-black border-b-8 border-zinc-700">
+    <h1 class="text-white">Frequently Asked Questions</h1>
+    <div class="questions">
+      <div class="question">
+        <input type="checkbox" id="q1" />
+        <label class="header" for="q1">
+          What is Netflix?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </label>
+        <div class="answer">
+          Netflix is a streaming service that offers a wide variety of
+          award-winning TV shows, movies, anime, documentaries and more – on
+          thousands of internet-connected devices. You can watch as much as
+          you want, whenever you want, without a single ad – all for one low
+          monthly price. There's always something new to discover, and new TV
+          shows and movies are added every week!
+        </div>
       </div>
-      <div class="flex-col text-white pr-20 pl-20 pt-10">
-        <h1
-          class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left"
-        >
-          Download your shows <br />to watch offline.
-        </h1>
-        <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
-          Save your favourites easily and always have <br />something to watch.
-        </h2>
+      <div class="question">
+        <input type="checkbox" id="q2" />
+        <label class="header" for="q2">
+          How much does Netflix Cost?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </label>
+        <div class="answer">
+          Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+          streaming device, all for one fixed monthly fee. Plans range from ₹
+          149 to ₹ 649 a month. No extra costs, no contracts.
+        </div>
+      </div>
+      <div class="question">
+        <input type="checkbox" id="q3" />
+        <label class="header" for="q3">
+          Where can I watch?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </label>
+        <div class="answer">
+          Watch anywhere, anytime. Sign in with your Netflix account to watch
+          instantly on the web at netflix.com from your personal computer or
+          on any internet-connected device that offers the Netflix app,
+          including smart TVs, smartphones, tablets, streaming media players
+          and game consoles.<br /><br />
+
+          You can also download your favourite shows with the iOS, Android, or
+          Windows 10 app. Use downloads to watch while you're on the go and
+          without an internet connection. Take Netflix with you anywhere.
+        </div>
+      </div>
+      <div class="question">
+        <input type="checkbox" id="q4" />
+        <label class="header" for="q4">
+          How do I cancel?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </label>
+        <div class="answer">
+          Netflix is flexible. There are no annoying contracts and no
+          commitments. You can easily cancel your account online in two
+          clicks. There are no cancellation fees – start or stop your account
+          anytime.
+        </div>
+      </div>
+      <div class="question">
+        <input type="checkbox" id="q5" />
+        <label class="header" for="q5">
+          What can I watch on Netflix?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </label>
+        <div class="answer">
+          Netflix has an extensive library of feature films, documentaries, TV
+          shows, anime, award-winning Netflix originals, and more. Watch as
+          much as you want, anytime you want.
+        </div>
+      </div>
+      <div class="question">
+        <input type="checkbox" id="q6" />
+        <label class="header" for="q6">
+          Is Netflix good for kids?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </label>
+        <div class="answer">
+          The Netflix Kids experience is included in your membership to give
+          parents control while kids enjoy family-friendly TV shows and films
+          in their own space.<br /><br />Kids profiles come with PIN-protected
+          parental controls that let you restrict the maturity rating of
+          content kids can watch and block specific titles you don’t want kids
+          to see.
+        </div>
       </div>
     </div>
-    <!--Section 3-->
-    <div
-      class="bg-black flex flex-col md:flex-row relative items-center justify-center border-b-8 border-zinc-700 pb-10"
-    >
-      <div class="flex-col text-white pr-20 pl-20 pt-10">
-        <h1
-          class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left"
-        >
-          Watch everywhere.
-        </h1>
-        <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
-          Stream unlimited movies and TV shows on your phone, <br />tablet,
-          laptop, and TV.
-        </h2>
-      </div>
-      <div class="relative pr-10 pl-10">
-        <img
-          src="/public/device-pile-in.png"
-          alt="devices-pile-up"
-          class="z-20"
-        />
-      </div>
-    </div>
-    <!-- Section 4 -->
-    <div
-      class="bg-black flex flex-col-reverse md:flex-row relative items-center text-white justify-center border-b-8 border-zinc-700 pb-10"
-    >
-      <div class="relative pr-10 pl-10">
-        <img src="/public/child-profile.png" alt="TV Frame" srcset="" />
-      </div>
-      <div class="flex-col text-white pr-20 pl-20 pt-10">
-        <h1
-          class="text-2xl font-bold mb-4 text-center md:text-5xl md:text-left"
-        >
-          Create profiles for <br />
-          children.
-        </h1>
-        <h2 class="text-lg text-center md:text-2xl md:text-left md:block">
-          Send children on adventures with their favourite <br />characters in a
-          space made just for them—free with<br />
-          your membership.
-        </h2>
-      </div>
-    </div>
 
-    <!--Questions-->
-    <div class="faq bg-black border-b-8 border-zinc-700">
-      <h1 class="text-white">Frequently Asked Questions</h1>
-      <div class="questions">
-        <div class="question">
-          <input type="checkbox" id="q1" />
-          <label class="header" for="q1">
-            What is Netflix?
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </label>
-          <div class="answer">
-            Netflix is a streaming service that offers a wide variety of
-            award-winning TV shows, movies, anime, documentaries and more – on
-            thousands of internet-connected devices. You can watch as much as
-            you want, whenever you want, without a single ad – all for one low
-            monthly price. There's always something new to discover, and new TV
-            shows and movies are added every week!
-          </div>
-        </div>
-        <div class="question">
-          <input type="checkbox" id="q2" />
-          <label class="header" for="q2">
-            How much does Netflix Cost?
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </label>
-          <div class="answer">
-            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
-            streaming device, all for one fixed monthly fee. Plans range from ₹
-            149 to ₹ 649 a month. No extra costs, no contracts.
-          </div>
-        </div>
-        <div class="question">
-          <input type="checkbox" id="q3" />
-          <label class="header" for="q3">
-            Where can I watch?
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </label>
-          <div class="answer">
-            Watch anywhere, anytime. Sign in with your Netflix account to watch
-            instantly on the web at netflix.com from your personal computer or
-            on any internet-connected device that offers the Netflix app,
-            including smart TVs, smartphones, tablets, streaming media players
-            and game consoles.<br /><br />
+    <main class="relative flex flex-col items-center justify-center px-4 py-6">
+      <h3 class="text-lg text-white text-center">
+        Ready to watch? Enter your email to create or restart your membership.
+      </h3>
+      <form class="w-full flex flex-col md:flex-row items-center md:justify-center md:max-w-4xl">
+        <input type="email" id="email-input"
+          class="border-2 border-gray-400 py-2 md:py-5 focus:outline-none focus:border-blue-400 mb-4 md:mb-0 w-full"
+          placeholder="Email Address" required />
+        <button class="bg-red-700 text-white text-xl md:text-2xl px-6 md:px-8 py-5 w-full max-w-[250px]">
+          Get Started >
+        </button>
+      </form>
+    </main>
+  </div>
 
-            You can also download your favourite shows with the iOS, Android, or
-            Windows 10 app. Use downloads to watch while you're on the go and
-            without an internet connection. Take Netflix with you anywhere.
-          </div>
-        </div>
-        <div class="question">
-          <input type="checkbox" id="q4" />
-          <label class="header" for="q4">
-            How do I cancel?
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </label>
-          <div class="answer">
-            Netflix is flexible. There are no annoying contracts and no
-            commitments. You can easily cancel your account online in two
-            clicks. There are no cancellation fees – start or stop your account
-            anytime.
-          </div>
-        </div>
-        <div class="question">
-          <input type="checkbox" id="q5" />
-          <label class="header" for="q5">
-            What can I watch on Netflix?
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </label>
-          <div class="answer">
-            Netflix has an extensive library of feature films, documentaries, TV
-            shows, anime, award-winning Netflix originals, and more. Watch as
-            much as you want, anytime you want.
-          </div>
-        </div>
-        <div class="question">
-          <input type="checkbox" id="q6" />
-          <label class="header" for="q6">
-            Is Netflix good for kids?
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </label>
-          <div class="answer">
-            The Netflix Kids experience is included in your membership to give
-            parents control while kids enjoy family-friendly TV shows and films
-            in their own space.<br /><br />Kids profiles come with PIN-protected
-            parental controls that let you restrict the maturity rating of
-            content kids can watch and block specific titles you don’t want kids
-            to see.
-          </div>
-        </div>
-      </div>
+  <!-- Footer section -->
+  <footer class="flex justify-center items-center bg-black py-6">
+    <a href="#" class="text-gray-500 mr-6">Terms of Service</a>
+    <a href="#" class="text-gray-500 mr-6">Privacy Policy</a>
+    <a href="#" class="text-gray-500">Help Center</a>
+  </footer>
+  <script src="/app.js"></script>
+</body>
 
-      <main
-        class="relative flex flex-col items-center justify-center px-4 py-6"
-      >
-        <h3 class="text-lg text-white text-center">
-          Ready to watch? Enter your email to create or restart your membership.
-        </h3>
-        <form
-          class="w-full flex flex-col md:flex-row items-center md:justify-center md:max-w-4xl"
-        >
-          <input
-            type="email"
-            id="email-input"
-            class="border-2 border-gray-400 py-2 md:py-5 focus:outline-none focus:border-blue-400 mb-4 md:mb-0 w-full"
-            placeholder="Email Address"
-            required
-          />
-          <button
-            class="bg-red-700 text-white text-xl md:text-2xl px-6 md:px-8 py-5 w-full max-w-[250px]"
-          >
-            Get Started >
-          </button>
-        </form>
-      </main>
-    </div>
-
-    <!-- Footer section -->
-    <footer class="flex justify-center items-center bg-black py-6">
-      <a href="#" class="text-gray-500 mr-6">Terms of Service</a>
-      <a href="#" class="text-gray-500 mr-6">Privacy Policy</a>
-      <a href="#" class="text-gray-500">Help Center</a>
-    </footer>
-    <script src="/app.js"></script>
-  </body>
 </html>
